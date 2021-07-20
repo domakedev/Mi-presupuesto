@@ -1,0 +1,105 @@
+@tailwind base;
+
+@tailwind components;
+
+body{
+    @apply 
+    flex
+    justify-start
+    items-center
+    flex-col
+
+    h-screen
+
+    bg-gradient-to-r
+    from-blue-600
+    to-blue-900
+}
+
+.header_title{
+    @apply
+    text-4xl
+    text-blue-50
+    py-4
+    mb-4
+    text-center
+}
+
+.box{
+    @apply
+    w-10/12
+    bg-white
+}
+
+.box_title{
+    @apply
+    text-blue-900
+    my-2
+    text-center
+    font-semibold
+    text-xl
+}
+
+form{
+    @apply
+    px-4
+
+    flex
+    flex-col
+    justify-center
+    items-center
+}
+
+label{
+    @apply
+    mt-4
+}
+
+
+input{
+    @apply
+    bg-blue-300
+    rounded-sm
+    w-auto
+    block
+    px-4
+    py-1
+}
+
+button{
+    @apply
+    bg-blue-500
+    text-white
+    py-1
+    px-4
+    my-4
+    /* rounded-lg */
+    block
+    mx-auto
+    active:bg-blue-700
+
+    transform
+    duration-300
+    active:translate-y-1
+    ;
+}
+
+.box_out_data_presupuesto{
+    @apply
+    bg-green-200
+    p-8
+    text-center
+}
+.box_out_data_restante{
+    @apply
+    bg-yellow-200
+    p-8
+    text-center
+}
+.box_out_data_registros{
+    @apply
+    bg-white
+    p-8
+}
+
+@tailwind utilities;
