@@ -12,7 +12,7 @@ body{
     h-screen
 
     bg-gradient-to-r
-    from-blue-600
+    from-blue-500
     to-blue-900
 }
 
@@ -28,6 +28,7 @@ body{
 .box{
     @apply
     w-10/12
+    max-w-2xl
     bg-white
 }
 
@@ -138,4 +139,16 @@ button{
     text-center
 }
 
+.normalPresupuesto{
+    @apply
+    bg-green-300
+}
+.cuidadoPresupuesto{
+    @apply
+    bg-yellow-300
+}
+.peligroPresupuesto{
+    @apply
+    bg-red-300
+}
 @tailwind utilities;
