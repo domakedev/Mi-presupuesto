@@ -64,6 +64,10 @@ input{
     block
     px-4
     py-1
+
+    focus:outline-none
+    focus:ring 
+    focus:ring-blue-400
 }
 
 button{
@@ -100,6 +104,38 @@ button{
     @apply
     bg-white
     p-8
+}
+
+.error{
+    @apply
+    bg-red-300
+    p-3
+    text-red-800
+}
+
+.nuevo-registro{
+    @apply
+    border-2
+    px-2
+    border-blue-900
+    flex
+    justify-between
+    items-center
+}
+.nuevo-registro_monto{
+    @apply
+    bg-blue-800
+    text-blue-50
+    rounded-2xl
+    px-2
+    text-sm
+}
+
+.presupuesto-text{
+    @apply
+
+    text-green-800
+    text-center
 }
 
 @tailwind utilities;
